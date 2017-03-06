@@ -1,4 +1,3 @@
-# JMS
 ### What is JMS?
 JMS means Java Messaging Service.  It is a standard for inter client communication. It allows the J2EE application component to create, send, read and receive the messages.
 
