@@ -30,6 +30,48 @@ The JMS provider handles data conversion, security of the messages and the clien
 
 * Native clients: These are programs that do not use the JSM API client but instead uses its own native API client.
 
+### The code for sending a message to a queue:
+
+```java
+import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Queue;
+import javax.jms.Session;
+
+import org.springframework.jms.core.MessageCreator;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.JmsTemplate102;
+
+public class JmsQueueSender 
+{
+   private JmsTemplate jmsTemplate;
+
+   private Queue queue;
+
+   public void setConnectionFactory(ConnectionFactory cf) 
+   {
+       jt = new JmsTemplate102(cf, false);
+   }
+
+   public void setQueue(Queue q) 
+   {
+       queue = q;
+   }
+
+   public void simpleSend() 
+   {
+       this.jmsTemplate.send(this.queue, new MessageCreator() 
+       {
+           public Message createMessage(Session session) throws JMSException 
+           {
+               return session.createTextMessage("hello queue world");
+           }
+       }
+   }
+}
+```
+
 ### For JMS-enabled application, what are the core JMS-related objects required?
 The core JMS-related objects that are required are:
 
