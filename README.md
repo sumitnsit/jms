@@ -7,11 +7,6 @@ JMS provides both type of messaging,
 1. Synchronous: Synchronous messaging involves a client that waits for the server to respond to a message.
 2. Asynchronous: Asynchronous messaging involves a client that does not wait for a message from the server. An event is used to trigger a message from a server.
 
-### What do you mean by Synchronous and Asynchronous type of messaging?
-**Synchronous:** In this type of messaging, client waits for the server to respond to a message.
-
-**Asynchronous:** In this type of messaging, client does not wait for a message from the server, but automatically an event is created to trigger a message from a server. 
-
 ### How many types of messaging model do JMS provide for and what are they?
 There are two types of messaging models that JMS provides –
 1. Point to point queuing
@@ -25,11 +20,15 @@ The JMS provider handles data conversion, security of the messages and the clien
 
 ### What are the components of JMS?
 
-1. JMS provider
-2. JMS client
-3. Messages
-4. Administered objects 
-5. Native clients
+* JMS provider: This is the main messaging system which provides with the JMS interfaces. IT also provides with the panel to control administrative and control features.
+
+* JMS clients: These comprise the programs and components which are written using the Java programming language. They are responsible for the production and consumption of messages.
+
+* Messages: These are the objects that are used to communicate between two clients.
+
+* Administered objects: These are predefined objects created by the administrator which can be used by the clients.
+
+* Native clients: These are programs that do not use the JSM API client but instead uses its own native API client.
 
 ### For JMS-enabled application, what are the core JMS-related objects required?
 The core JMS-related objects that are required are:
