@@ -4,8 +4,8 @@ JMS means Java Messaging Service.  It is a standard for inter client communicati
 ### What type of messaging is provided by JMS?
 JMS provides both type of messaging,
 
-- Synchronous: Synchronous messaging involves a client that waits for the server to respond to a message.
-- Asynchronous: Asynchronous messaging involves a client that does not wait for a message from the server. An event is used to trigger a message from a server.
+1. Synchronous: Synchronous messaging involves a client that waits for the server to respond to a message.
+2. Asynchronous: Asynchronous messaging involves a client that does not wait for a message from the server. An event is used to trigger a message from a server.
 
 ### How many types of messaging model do JMS provide for and what are they?
 There are two types of messaging models that JMS provides –
