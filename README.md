@@ -29,7 +29,7 @@ The JMS provider handles data conversion, security of the messages and the clien
 1. JMS provider
 2. JMS client
 3. Messages
-4. Administered objects
+4. Administered objects 
 5. Native clients
 
 ### For JMS-enabled application, what are the core JMS-related objects required?
